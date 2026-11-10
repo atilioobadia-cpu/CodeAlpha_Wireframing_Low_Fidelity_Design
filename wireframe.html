@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wireframe - Education Platform (Low-Fi)</title>
+<style>
+  body { font-family: Arial, sans-serif; background:#f2f2f2; margin:0; padding:20px; display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
+  .screen { width:375px; height:812px; background:#fff; border:2px solid #999; position:relative; overflow:hidden; }
+  .bar { height:44px; background:#ddd; display:flex; align-items:center; padding:0 12px; font-weight:bold; color:#555; border-bottom:1px solid #bbb; }
+  .content { padding:12px; }
+  .box { background:#eee; border:1px dashed #aaa; border-radius:6px; }
+  .input { background:#f7f7f7; border:1px solid #bbb; border-radius:6px; padding:10px; color:#888; }
+  .title { font-size:16px; font-weight:bold; color:#444; margin:8px 0; }
+  .small { font-size:12px; color:#777; }
+  .card { background:#eee; border:1px dashed #aaa; border-radius:6px; padding:8px; margin-bottom:8px; display:flex; gap:8px; }
+  .thumb { width:60px; height:60px; background:#ddd; border:1px dashed #aaa; border-radius:6px; }
+  .btn { background:#ccc; border:1px solid #999; border-radius:6px; padding:10px; text-align:center; color:#555; font-weight:bold; }
+  .chip { background:#eee; border:1px solid #bbb; border-radius:16px; padding:4px 10px; font-size:12px; color:#555; display:inline-block; margin:2px; }
+  .nav { position:absolute; bottom:0; left:0; right:0; height:56px; background:#ddd; border-top:1px solid #bbb; display:flex; justify-content:space-around; align-items:center; color:#666; font-size:11px; }
+  .progress { height:6px; background:#ddd; border-radius:3px; margin-top:6px; }
+  .progress > div { height:100%; background:#999; border-radius:3px; width:60%; }
+  .lesson { border-bottom:1px solid #eee; padding:8px 0; display:flex; gap:8px; align-items:center; }
+  .lico { width:36px; height:36px; background:#ddd; border:1px dashed #aaa; border-radius:6px; }
+</style>
+</head>
+<body>
+
+<!-- Screen 1: Home -->
+<div class="screen">
+  <div class="bar">☰  LearnHub</div>
+  <div class="content">
+    <div class="input">🔍 Search courses...</div>
+    <div style="margin:8px 0;"><span class="chip">All</span><span class="chip">Design</span><span class="chip">Code</span><span class="chip">Business</span></div>
+    <div class="title">Continue Learning</div>
+    <div class="card"><div class="thumb"></div><div><b>UI/UX Design Fundamentals</b><div class="small">12 lessons · 4h 30m</div><div class="progress"><div></div></div></div></div>
+    <div class="title">Recommended</div>
+    <div class="card"><div class="thumb"></div><div><b>JavaScript for Beginners</b><div class="small">20 lessons · 8h 10m</div><div class="progress"><div style="width:0%"></div></div></div></div>
+    <div class="card"><div class="thumb"></div><div><b>Data Analytics with Python</b><div class="small">15 lessons · 6h 00m</div><div class="progress"><div style="width:20%"></div></div></div></div>
+  </div>
+  <div class="nav"><span>Home</span><span>Courses</span><span>Search</span><span>Profile</span></div>
+</div>
+
+<!-- Screen 2: Course Detail -->
+<div class="screen">
+  <div class="bar">← UI/UX Design Fundamentals</div>
+  <div class="content">
+    <div class="box" style="height:140px; display:flex; align-items:center; justify-content:center; color:#888;">course cover image</div>
+    <div class="title">UI/UX Design Fundamentals</div>
+    <div class="small">By Sarah Chen · 12 lessons · 4.8 ★ · 2,340 students</div>
+    <div class="btn" style="margin:10px 0;">Continue — Lesson 7</div>
+    <div class="title">Lessons</div>
+    <div class="lesson"><div class="lico"></div><div><b>1. Intro to UX</b><div class="small">12 min · Completed</div></div></div>
+    <div class="lesson"><div class="lico"></div><div><b>2. Wireframing Basics</b><div class="small">18 min · Completed</div></div></div>
+    <div class="lesson"><div class="lico"></div><div><b>3. Color & Typography</b><div class="small">15 min · In progress</div></div></div>
+    <div class="lesson"><div class="lico"></div><div><b>4. Prototyping</b><div class="small">20 min · Locked</div></div></div>
+  </div>
+  <div class="nav"><span>Home</span><span>Courses</span><span>Search</span><span>Profile</span></div>
+</div>
+
+<!-- Screen 3: Lesson Player -->
+<div class="screen">
+  <div class="bar">← Lesson 3: Color & Typography</div>
+  <div class="content">
+    <div class="box" style="height:180px; display:flex; align-items:center; justify-content:center; color:#888;">video player</div>
+    <div class="title">Lesson 3: Color & Typography</div>
+    <div class="small">Learn how to choose color palettes and typography that enhance readability and brand identity.</div>
+    <div class="title">Quick Quiz</div>
+    <div class="btn" style="margin:6px 0; background:#eee; color:#555;">A. Contrast improves readability</div>
+    <div class="btn" style="margin:6px 0; background:#eee; color:#555;">B. Use 10+ fonts per screen</div>
+    <div class="btn" style="margin:6px 0; background:#eee; color:#555;">C. Ignore color blindness</div>
+    <div class="btn" style="margin:10px 0;">Back to Home</div>
+  </div>
+  <div class="nav"><span>Home</span><span>Courses</span><span>Search</span><span>Profile</span></div>
+</div>
+
+<!-- Screen 4: Profile -->
+<div class="screen">
+  <div class="bar">Profile</div>
+  <div class="content" style="text-align:center;">
+    <div class="box" style="width:72px; height:72px; border-radius:50%; margin:10px auto;"></div>
+    <div class="title">Atilio Obadia</div>
+    <div class="small">atilioobadia@gmail.com</div>
+    <div style="display:flex; gap:8px; margin:12px 0;">
+      <div class="box" style="flex:1; padding:10px;"><b>3</b><div class="small">Courses</div></div>
+      <div class="box" style="flex:1; padding:10px;"><b>42</b><div class="small">Lessons</div></div>
+      <div class="box" style="flex:1; padding:10px;"><b>12h</b><div class="small">Learned</div></div>
+    </div>
+    <div class="title">Achievements</div>
+    <div style="margin:8px 0;"><span class="chip">First Course</span><span class="chip">7-day streak</span><span class="chip">40 lessons</span></div>
+    <div class="title">Settings</div>
+    <div style="border-bottom:1px solid #eee; padding:8px 0; display:flex; justify-content:space-between;"><span>Notifications</span><span>›</span></div>
+    <div style="border-bottom:1px solid #eee; padding:8px 0; display:flex; justify-content:space-between;"><span>Dark mode</span><span>›</span></div>
+    <div style="padding:8px 0; display:flex; justify-content:space-between;"><span>Help & Support</span><span>›</span></div>
+    <div class="btn" style="margin:10px 0;">Back to Home</div>
+  </div>
+  <div class="nav"><span>Home</span><span>Courses</span><span>Search</span><span>Profile</span></div>
+</div>
+</body>
+</html>
